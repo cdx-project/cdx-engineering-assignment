@@ -1,5 +1,3 @@
-![cdx-logo](CDxLogo.png | width=250x250)
-
 # Full-stack Engineering Take Home Assignment
 Thank you for your interest in joining the CDx engineering team!
 
