@@ -1,4 +1,6 @@
-# CDX Full-stack Engineering Take Home Assignment
+
+
+# Full-stack Engineering Take Home Assignment
 Thank you for your interest in joining the CDx engineering team!
 
 This document is just a quick test to see where your coding and problem solving skills are with something related to dApp development. It’s designed to be straightforward and not take too much of your time. 
@@ -20,12 +22,14 @@ This repo contains one contract, `CappedSet.sol`, that represents an instance of
 
  There are three methods that we would like you to implement in `CappedSet.sol`: 
 
--  `insert(address addr, uint256 value) returns (address newLowestAddress, uint256 newLowestValue)`. 
+-  `insert(address addr, uint256 value) returns (address newLowestAddress, uint256 newLowestValue)` 
     - This method should add a new element (`addr` and `value`) and return the new element with the lowest `value`, which might be itself. If this is the first element being inserted, this method should return `(0,0)`. 
-- `update(address addr, uint256 newVal) returns (address newLowestAddress, uint256 newLowestValue)`. 
+- `update(address addr, uint256 newVal) returns (address newLowestAddress, uint256 newLowestValue)`
     - This method should update the existing element with address `addr`, if it exists, and return the new element with the lowest `value`, which might be itself. 
-- `remove(address addr) returns (address newLowestAddress, uint256 newLowestValue)`.
+- `remove(address addr) returns (address newLowestAddress, uint256 newLowestValue)`
     -  This method should delete the existing element with address `addr`, if it exists, and return the new element with the lowest `value`. 
+- `getValue(address addr) returns (uint256`)
+    - Retrieves the `value` for the element with address `addr`, if it exists. 
 
 There are already stubs for each in the contract. You're free to design the contract however you want as long as it follows the above behaviour. You can add as many contract members/fields as you wish. You can also use any open-source solidity libraries such as `openzeppelin`. 
 

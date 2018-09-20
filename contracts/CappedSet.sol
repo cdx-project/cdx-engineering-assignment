@@ -38,4 +38,12 @@ contract CappedSet {
     {
         
     }
+
+    function getValue(address addr)
+        public
+        view 
+        returns (uint256)
+    {
+        
+    }
 }
