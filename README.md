@@ -18,7 +18,7 @@ When the set gets too big (i.e., it reaches its max), it should boot out the ele
 
 This repo contains one contract, `CappedSet.sol`, that represents an instance of this special set. Its constructor takes an argument `numElements` that represents the maximum number of elements that can be in the set.
 
- There are three methods that we would like you to implement in `CappedSet.sol`: 
+ There are four methods that we would like you to implement in `CappedSet.sol`: 
 
 -  `insert(address addr, uint256 value) returns (address newLowestAddress, uint256 newLowestValue)` 
     - This method should add a new element (`addr` and `value`) and return the new element with the lowest `value`, which might be itself. If this is the first element being inserted, this method should return `(0,0)`. 
