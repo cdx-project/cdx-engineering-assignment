@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate"
+  },
+  "dependencies": {
+    "truffle": "^4.1.14"
+  },
+  "license": "MIT"
+}
