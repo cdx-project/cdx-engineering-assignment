@@ -1,14 +1,14 @@
 # CDX Full-stack Engineering Take Home Assignment
 Thank you for your interest in joining the CDx engineering team!
 
-This document is just a quick test to see where your coding and problem solving skills are with something related to dApp development. It’s designed to be straightforward, open-ended, and not take too much of your time. 
+This document is just a quick test to see where your coding and problem solving skills are with something related to dApp development. It’s designed to be straightforward and not take too much of your time. 
 
 Since a lot of this position will be JavaScript/Typescript-based app/library development and integrating with Solidity contracts, we've created a task that, in some capacity, represents the tooling you'll be working with on a day-to-day basis with us. 
 
 ## The task
 Unlike other languages, access to complex data structures is quite limited in Solidity. In many cases, projects end up implementing common structures such as linked lists, traversable mappings, and sets by themselves. These structures are sometimes necessary for higher levels of abstraction and more complex protocols.
 
-We want you to help implement a set-like structure in Solidity that only allows a certain amount of "elements" in the set. Once you've created the Solidity contract, we want you to test it in **JavaScript/TypeScript, not in Solidity**.
+We want you to help implement a set-like structure in Solidity (using truffle to help out) that only allows a certain amount of "elements" in the set. Once you've created the Solidity contract, we want you to test it in **JavaScript/TypeScript, not in Solidity**.
 
 ### The CappedSet contract
 
@@ -27,7 +27,7 @@ This repo contains one contract, `CappedSet.sol`, that represents an instance of
 - `remove(address addr) returns (address newLowestAddress, uint256 newLowestValue)`.
     -  This method should delete the existing element with address `addr`, if it exists, and return the new element with the lowest `value`. 
 
-There are already stubs for each in the contract. You're free to design the contract however you want as long as it follows the above behaviour. 
+There are already stubs for each in the contract. You're free to design the contract however you want as long as it follows the above behaviour. You can add as many contract members/fields as you wish. You can also use any open-source solidity libraries such as `openzeppelin`. 
 
 ### Testing the contract
 
@@ -52,4 +52,6 @@ All you have to do is code!
 We're interested in your coding style, your familarity with smart contract development, and your JavaScript/TypeScript proficiency. Bonus points for low gas usage!
 
 ## How to complete this challenge
-Fork this repo and send us the GitHub link when you're done. Good luck!
+Fork this repo, implement `CappedSet.sol`, and write some tests in the `/test` folder. Send `julian@cdxproject.com` the GitHub link when you're done. 
+
+Good luck!
